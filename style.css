@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ a {
+    text-decoration: none;
+
+}
+
+nav {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: space-between;
+    font-family:  'Salesforce Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';   
+    
+}   
+
+.navbar-nav, .utilitary-nav  {
+    display: flex;
+    list-style: none;    
+
+}
+
+
+.utilitary-nav>li, .navbar-nav>li {
+    padding-left: 16px;  
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+}
+
+.nav-header-logo {
+    width: 45.33px;
+    height: 32.02px;
+    margin-right: 24px;
+}
+
+.contact-heading {
+    text-decoration: underline;
+}
+
+.phone-numbers {
+    display: inline-block;
+    margin: 0px 5px;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+/*Tamanho icones*/
+.icon-globe, .icon-globe-hover, .icon-search, .icon-search-hover, .icon-login, .icon-login-hover  {
+    width: 18px;
+    height: 18px;
+}
+
+
+/*Mostrar e esconder icon-search*/
+.icon-search-hover {
+    display: none;
+}
+
+.region-selector:hover .icon-search {
+    display: none;
+}
+
+.region-selector:hover .icon-search-hover {
+    display: inline-block;
+}
+
+
+/*Mostrar e esconder icon-globe*/
+.icon-globe-hover {
+    display: none;
+}
+
+.region-selector:hover .icon-globe{
+    display: none;
+}
+
+.region-selector:hover .icon-globe-hover{
+    display: inline-block; 
+}
+
+/*Mostrar e esconder icon-login*/
+.icon-login-hover {
+    display: none;
+}
+
+.region-selector:hover .icon-login{
+    display: none;
+}
+
+.region-selector:hover .icon-login-hover{
+    display: inline-block; 
+}
+
+.button-icon-login {
+    background-color: transparent;
+    border: none;
+}
+
+.region-selector:hover .text-login {
+    color: #0176d3; 
+}
+
+/*Fazer o border-radius selection dos icons*/
+
+.utilitary-nav {
+    display: flex;
+    align-items: center;
+}
+
+.region-selector {
+    display: flex;
+    align-items: center; 
+}
+
+.text-login {
+    margin-left: 3px;
+}
+
+.nav-part-two {
+    align-items: center;
+    display: inline-flex;
+}
+
+.button-free-trial {
+    padding: 16px;
+}
+
+.button-trial {
+    color: white;
+    font-weight: bold;
+}
+
+.free-trial {
+    border: none;
+    border-radius: 3px;
+    padding: 8px 24px;
+    background-color: #2e844a;
+}
+
+.free-trial:hover {
+    background-color: #1c3326;
+}
