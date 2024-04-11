@@ -3,21 +3,62 @@
     margin: 0;
 }
 
+.globalnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; 
+    z-index: 1000; 
+    height: 72px;
+    display:grid;
+    align-items: center;
+}
+
+.nav-sales {
+    margin-top: 10vh;
+}
+
+
+main {
+    margin-top: 10vh;
+}
+
+
  a {
     text-decoration: none;
+    color: #032d60; 
+}
 
+
+a:hover, .dropdown-menu a:hover  {
+    color: #0176d3;
+}
+
+.watch-demos a:hover, .free-trial a:hover {
+    color: white;
+}
+
+
+.navbar-nav>li{
+    font-weight: 600;
 }
 
 nav {
-    height: 8vh;
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-left: 40px;
     margin-right: 40px;
     justify-content: space-between;
     font-family:  'Salesforce Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';   
-    
-}   
+}  
+
+
+.nav-nav, .nav-sales {
+
+    height: 72px;
+}
 
 .navbar-nav, .utilitary-nav  {
     display: flex;
@@ -29,9 +70,12 @@ nav {
 .utilitary-nav>li, .navbar-nav>li {
     padding-left: 16px;  
 }
+
 .nav-container{
     display: flex;
     align-items: center;
+    width: 548.213px;
+    height: 44px;
 }
 
 .nav-header-logo {
@@ -42,7 +86,11 @@ nav {
 
 .contact-heading {
     text-decoration: underline;
+    font-size: 14px;
+    color:rgb(3, 45, 96);
+    white-space: nowrap;
 }
+
 
 .phone-numbers {
     display: inline-block;
@@ -108,6 +156,12 @@ nav {
 }
 
 /*Fazer o border-radius selection dos icons*/
+.region-selector:hover {
+    background-color: #0174d352;
+    border: #0176d3;
+    border-radius: 30px;
+}
+
 
 .utilitary-nav {
     display: flex;
@@ -121,6 +175,7 @@ nav {
 
 .text-login {
     margin-left: 3px;
+    font-weight: 600;
 }
 
 .nav-part-two {
@@ -128,13 +183,17 @@ nav {
     display: inline-flex;
 }
 
-.button-free-trial {
-    padding: 16px;
+.button-watch-trial {
+    padding-left: 16px;
 }
 
 .button-trial {
     color: white;
+    font-size: 16px;
     font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+    white-space: nowrap;
 }
 
 .free-trial {
@@ -142,8 +201,77 @@ nav {
     border-radius: 3px;
     padding: 8px 24px;
     background-color: #2e844a;
+    width: 137.637px;
+    height: 43.200px;
 }
+
+
 
 .free-trial:hover {
     background-color: #1c3326;
 }
+
+.nav-container-sales {
+    display: flex;
+    align-items: center;
+}
+
+
+.div-global-sales {
+    border-top: 1px solid rgd(229, 229, 299);
+    box-shadow: rgba(24, 24, 24, 0.08) 0px 0px 2px, rgba(24, 24, 24, 0.16) 0px 2px 4px 1px;
+}
+
+.nav-sales-header-logo{
+    width: 86.888px;
+    height: 32px;
+}
+
+.property-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.watch-demos {
+    border: none;
+    border-radius: 3px;
+    padding: 8px 24px;
+    background-color: #0176d3;
+}
+
+.watch-demos:hover {
+    background-color: #1c3326;
+}
+
+
+/*Menu clicavel*/
+.dropdown-menu{
+    position: absolute;
+    box-shadow: 0 0 2px black;
+    display: none;
+    width: 592px;
+    height: 247.200px;
+}
+
+.dropdown-menu a{
+    display: block;
+    color: black;
+}
+
+.dropdown-left, .dropdown-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+
+#drop:checked + .dropdown-menu {
+    display: flex;
+}
+
+
+
+
+
